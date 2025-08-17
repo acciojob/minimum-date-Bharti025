@@ -1,5 +1,10 @@
 function minDate(dates) {
   //write you code here
+	let min=Infinity;
+  for(let i=0; i<dates.length-1; i++){
+	  min=Math.min(dates[i],dates[i+1]);
+  }
+	return min;
 }
 
 // Do not change the code
@@ -37,4 +42,4 @@ var dates = [
   "2023/03/30",
 ];
 
-alert(minDate(dates));
+ alert(minDate(dates));
